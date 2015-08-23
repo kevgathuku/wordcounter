@@ -21,6 +21,15 @@
       </div>
     </div>
   </div>
+  <script type="text/javascript">
+    (function() {
+      var text = document.getElementById('count-area').value;
+      if (text != "") {
+        var count = text.match(/\S+/g).length;
+        document.getElementById('results').innerHTML = "I spot " + count + " words";
+      }
+    })();
+  </script>
   <script type="text/javascript" src="js/counter.js"></script>
 </body>
 </html>
